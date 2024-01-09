@@ -681,6 +681,19 @@ body.elementor-page-22117 .qodef-qi-accordion .qodef-e-content p {
 										function onBodyLoaded()
 										{
 											SwitchLanguage(language);
+											
+											if (language == "german")
+											{
+												var dateTimeCounter = document.getElementById("date-time-counter");
+												dateTimeCounter.dataset["dayLabel"] = "Tag";
+												dateTimeCounter.dataset["dayLabelPlural"] = "Tage";
+												dateTimeCounter.dataset["hourLabel"] = "Sunde";
+												dateTimeCounter.dataset["hourLabelPlural"] = "Stunden";
+												dateTimeCounter.dataset["minuteLabel"] = "Minute";
+												dateTimeCounter.dataset["minuteLabelPlural"] = "Minuten";
+												dateTimeCounter.dataset["secondLabel"] = "Sekunde";
+												dateTimeCounter.dataset["secondLabelPlural"] = "Sekunden";
+											}
 										}
 
 										let loginForm = document.getElementById("response_form");
@@ -689,7 +702,7 @@ body.elementor-page-22117 .qodef-qi-accordion .qodef-e-content p {
 											e.preventDefault();
 											if (language == "german")
 											{
-												window.open("https://docs.google.com/forms/d/e/1FAIpQLSf2Ble4NsiB2mlnfbZ15IaO7zOaZnH6pift5xXODf0kS3uc-g/viewform?usp=sf_link");
+												window.open("https://docs.google.com/forms/d/e/1FAIpQLSflyXw41CEVU8UG6b2ZgGUF1rAmz-i2Jwd1q3-DD24pr3dYsQ/viewform?usp=sf_link");
 											}
 											else
 											{
@@ -708,7 +721,7 @@ body.elementor-page-22117 .qodef-qi-accordion .qodef-e-content p {
 				</div>
 				<div class="elementor-element elementor-element-3d52c36 elementor-widget elementor-widget-qi_addons_for_elementor_countdown" data-id="3d52c36" data-element_type="widget" data-widget_type="qi_addons_for_elementor_countdown.default">
 				<div class="elementor-widget-container">
-			<div class="qodef-shortcode qodef-m  qodef-qi-countdown qodef-layout--simple qodef-hide--mon qodef-justify--center" data-date="2024/08/03 09:00:00" data-hide="mon" data-month-label="Month" data-month-label-plural="Months" data-day-label="dan" data-day-label-plural="Dana" data-hour-label="sat" data-hour-label-plural="Sati" data-minute-label="minut" data-minute-label-plural="Minuta" data-second-label="sekund" data-second-label-plural="Sekundi">
+			<div id="date-time-counter" class="qodef-shortcode qodef-m  qodef-qi-countdown qodef-layout--simple qodef-hide--mon qodef-justify--center" data-date="2024/08/03 09:00:00" data-hide="mon" data-month-label="Month" data-month-label-plural="Months" data-day-label="dan" data-day-label-plural="Dana" data-hour-label="sat" data-hour-label-plural="Sati" data-minute-label="minut" data-minute-label-plural="Minuta" data-second-label="sekund" data-second-label-plural="Sekundi">
 	<span class="qodef-m-date">
 				<span class="qodef-digit-wrapper qodef-days">
 			<span class="qodef-digit"> </span>
